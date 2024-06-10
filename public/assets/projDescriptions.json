@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Spotify Wrapped",
+    "subtitle":"Objects & Design Final Project", 
+    "content": "Android app that creates a listening summary based on Spotify data, has feed functionality to post and share with friends.",
+    "github": "https://github.com/avran-v/spotify-wrapped",
+    "demovid": "https://www.youtube.com/watch?v=Y5ouipkFlE0&t=1s",
+    "image": "/assets/swrapped.png"
+  },
+  {
+    "title": "Accessify",
+    "subtitle":"🏆 UGA Hacks 9 Winner", 
+    "content": "Adobe Express add-on created with React to aid designers in making more accessible design choices.",
+    "github": "https://github.com/avran-v/ugahacks9",
+    "devpost": "https://devpost.com/software/accessify-2p7nat",
+    "image": "/assets/accessify.png"
+  },
+  {
+    "title": "BlueX",
+    "subtitle":"🏆 UGA Makes 2 Winner", 
+    "content": "Website made with Flask that aids in calculation of carbon emissions and gives donation recommendations to offset them.",
+    "github": "https://github.com/avran-v/ugamakes2",
+    "devpost": "https://example.com/passportpal",
+    "image":  "/assets/bluex.png"
+  },
+  {
+    "title": "Study Buddy",
+    "subtitle":"HackGT X Submission", 
+    "content": "AI-powered virtual friend that aids in the creation and tracking of manageable goals, along with motivating the user!",
+    "github": "https://github.com/avran-v/studybuddy",
+    "devpost": "https://devpost.com/software/studybuddy-irgxhm",
+    "image":  "/assets/sbuddy.png"
+  },
+  {
+    "title": "Passport Pal",
+    "subtitle":"🏆 UGA Hacks 8 Winner", 
+    "content": "Website that helps match solo travelers around the world based on mutual preferences like location and budget.",
+    "github": "https://github.com/avran-v/passportpal",
+    "devpost": "https://example.com/passportpal",
+    "image":  "/assets/passportpal.png"
+  },
+  {
+    "title": "Genre Genius",
+    "subtitle":"Software Development Final Project", 
+    "content": "JavaFX app to test your knowledge of songs and artists in different genres through lyric snippets.",
+    "github": "https://github.com/avran-v/genre-genius",
+    "image":  "/assets/ggplaceholder.png"
+  }
+]
+

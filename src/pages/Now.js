@@ -1,6 +1,6 @@
-const Now = () => {
+const Now = ({ className }) => {
     return (
-<div>
+<div className={className}>
       <main>
         <div className="flex flex-col items-center mt-5">
           <p className="text-center">What I'm focused on right now in life!</p>

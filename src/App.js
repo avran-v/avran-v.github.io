@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from "react";
 import {
@@ -7,7 +6,6 @@ import {
   Route,
 } from "react-router-dom";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./pages/Projects";
 import Now from "./pages/Now";
@@ -17,10 +15,9 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<About />} />
-        <Route path="/projects" element={<Projects/>}/>
-        <Route path="/now" element={<Now />} />
-        <Route path="/contact" element={<Contact />}/>
+        <Route exact path="/" element={<About className="fade-in"/>} />
+        <Route path="/projects" element={<Projects className="fade-in"/>}/>
+        <Route path="/now" element={<Now className="fade-in"/>} />
       </Routes>
     </Router>
   );
