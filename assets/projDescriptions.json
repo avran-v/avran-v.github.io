@@ -1,5 +1,29 @@
 [
   {
+    "title": "Exoplanet Habitability Prediction",
+    "subtitle":"Machine Learning Final Project", 
+    "content": "Trained 3 ML models and created an interactive demo to test if an exoplanet is habitable or not.",
+    "github": "https://github.gatech.edu/aveerama3/mlproject",
+    "website": "https://github.gatech.edu/pages/aveerama3/mlproject/",
+    "image": "/assets/exoplanet.jpg"
+  },
+  {
+    "title": "Hit the Charts!",
+    "subtitle":"UGA Hacks 10 Submission", 
+    "content": "Website where musicians can test out if their songs will go viral or not, checking out a custom analysis and data of chart-topping songs.",
+    "github": "https://github.com/avran-v/Hit-The-Charts",
+    "devpost": "https://devpost.com/software/rockstar",
+    "image": "/assets/hitthecharts.jpg"
+  },
+  {
+    "title": "Recipe Rescue",
+    "subtitle":"🏆 Hack like W@CC Winner", 
+    "content": "Web platform that connects food-insecure communities with local food banks through recipe matchmaking",
+    "github": "https://github.gatech.edu/aveerama3/mlproject",
+    "devpost": "https://devpost.com/software/recipe-rescue-wpzgcx",
+    "image": "/assets/reciperescue.jpg"
+  },
+  {
     "title": "Spotify Wrapped",
     "subtitle":"Objects & Design Final Project", 
     "content": "Android app that creates a listening summary based on Spotify data, has feed functionality to post and share with friends.",
