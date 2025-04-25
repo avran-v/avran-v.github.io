@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Project({ title, content, github, image, devpost, demovid, subtitle }) {
+export default function Project({ title, content, github, image, devpost, website, demovid, subtitle }) {
   return (
     <div className="w-full mx-auto my-4 border rounded overflow-hidden shadow-lg bg-white flex flex-col md:flex-row">
       <div 
@@ -27,6 +27,11 @@ export default function Project({ title, content, github, image, devpost, demovi
             {demovid && (
             <a href={devpost} className="text-blue-500 hover:text-blue-700" target="_blank" rel="noopener noreferrer">
               Demo Video
+            </a>
+          )}
+            {website && (
+            <a href={devpost} className="text-blue-500 hover:text-blue-700" target="_blank" rel="noopener noreferrer">
+              Website
             </a>
           )}
         </div>

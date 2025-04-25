@@ -27,6 +27,7 @@ const Projects = ({ className }) => {
                   image={project.image} 
                   devpost={project.devpost}
                   demovid={project.demovid}
+                  website={project.website}
                   subtitle={project.subtitle}
                 />
               </div>

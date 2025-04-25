@@ -6,7 +6,7 @@ const About = ({ className }) => {
       <main>
         <div className="flex flex-col items-center mt-5">
           <img src="assets/header.jpg" className="h-[24rem] mb-4 object-contain" alt="Header Image" /> 
-          <p className="text-center">Hi, I'm Keerthi Veeramachaneni, a 2nd year computer science student at the Georgia Institute of Technology!</p>
+          <p className="text-center">Hi, I'm Keerthi Veeramachaneni, a 3rd year computer science student at the Georgia Institute of Technology!</p>
           <p className="text-center">I'm currently expanding my skills in the realms of <b>software development</b> and <b>research.</b></p>
           <div class="px-6 pt-4 pb-2 mb-4">
           <p className="text-center mb-2">Interests:</p>
