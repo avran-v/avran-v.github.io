@@ -40,12 +40,28 @@
     "image": "/assets/accessify.png"
   },
   {
+    "title": "BlueX",
+    "subtitle":"🏆 UGA Makes 2 Winner", 
+    "content": "Website made with Flask that aids in calculation of carbon emissions and gives donation recommendations to offset them.",
+    "github": "https://github.com/avran-v/ugamakes2",
+    "devpost": "https://example.com/passportpal",
+    "image":  "/assets/bluex.png"
+  },
+  {
     "title": "Study Buddy",
     "subtitle":"HackGT X Submission", 
     "content": "AI-powered virtual friend that aids in the creation and tracking of manageable goals, along with motivating the user!",
     "github": "https://github.com/avran-v/studybuddy",
     "devpost": "https://devpost.com/software/studybuddy-irgxhm",
     "image":  "/assets/sbuddy.png"
+  },
+  {
+    "title": "Passport Pal",
+    "subtitle":"🏆 UGA Hacks 8 Winner", 
+    "content": "Website that helps match solo travelers around the world based on mutual preferences like location and budget.",
+    "github": "https://github.com/avran-v/passportpal",
+    "devpost": "https://example.com/passportpal",
+    "image":  "/assets/passportpal.png"
   },
   {
     "title": "Genre Genius",
