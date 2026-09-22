@@ -1,27 +1,161 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --site-bg: #a8bca1;
+  --site-panel: #c4d1bd;
+  --site-panel-strong: #b6c6ae;
+  --site-text: #111827;
+  --site-muted: #111827;
+  --site-subtle: #111827;
+  --site-accent: #6f2f3a;
+  --site-accent-hover: #5f2630;
+  --site-accent-soft: rgb(111 47 58 / 0.28);
+  --footer-bg: #6f2f3a;
+  --footer-text: #f8efe8;
+  --footer-muted: #ead7cd;
+  --footer-accent: #f0d7cf;
+  --theme-transition: 260ms ease;
+}
+
+body.theme-inverted {
+  --site-bg: #6f2f3a;
+  --site-panel: #87505a;
+  --site-panel-strong: #7d434e;
+  --site-text: #f8efe8;
+  --site-muted: #ead7cd;
+  --site-subtle: #f0d7cf;
+  --site-accent: #a8bca1;
+  --site-accent-hover: #95ad8d;
+  --site-accent-soft: rgb(168 188 161 / 0.3);
+  --footer-bg: #a8bca1;
+  --footer-text: #111827;
+  --footer-muted: #374151;
+  --footer-accent: #374151;
+}
+
 @layer base {
+  html {
+    min-height: 100%;
+    background-color: var(--site-bg);
+  }
   * {
     @apply border-slate-800/10;
   }
   body {
-    @apply bg-sky-100 text-slate-900 antialiased;
+    min-height: 100%;
+    background-color: var(--site-bg);
+    color: var(--site-text);
+    @apply font-sans text-slate-900 antialiased;
+    text-transform: lowercase;
     margin: 0;
-    font-family: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition:
+      background-color var(--theme-transition),
+      color var(--theme-transition);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-weight: 600;
+    @apply font-sans font-semibold;
   }
 
   code {
     font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  }
+}
+
+@layer utilities {
+  .bg-site {
+    background-color: var(--site-bg);
+    transition: background-color var(--theme-transition);
+  }
+
+  .bg-site-panel {
+    background-color: var(--site-panel);
+    transition: background-color var(--theme-transition);
+  }
+
+  .bg-site-panel-strong {
+    background-color: var(--site-panel-strong);
+    transition: background-color var(--theme-transition);
+  }
+
+  .bg-site-accent {
+    background-color: var(--site-accent);
+    transition: background-color var(--theme-transition);
+  }
+
+  .text-site {
+    color: var(--site-text);
+    transition: color var(--theme-transition);
+  }
+
+  .text-site-muted {
+    color: var(--site-muted);
+    transition: color var(--theme-transition);
+  }
+
+  .text-site-subtle {
+    color: var(--site-subtle);
+    transition: color var(--theme-transition);
+  }
+
+  .text-site-accent {
+    color: var(--site-accent);
+    transition: color var(--theme-transition);
+  }
+
+  .border-site-accent-soft {
+    border-color: var(--site-accent-soft);
+    transition: border-color var(--theme-transition);
+  }
+
+  .bg-footer-band {
+    background-color: var(--footer-bg);
+    transition: background-color var(--theme-transition);
+  }
+
+  .text-footer {
+    color: var(--footer-text);
+    transition: color var(--theme-transition);
+  }
+
+  .text-footer-muted {
+    color: var(--footer-muted);
+    transition: color var(--theme-transition);
+  }
+
+  .text-footer-accent {
+    color: var(--footer-accent);
+    transition: color var(--theme-transition);
+  }
+
+  .theme-smooth {
+    transition:
+      background-color var(--theme-transition),
+      color var(--theme-transition),
+      border-color var(--theme-transition),
+      text-decoration-color var(--theme-transition),
+      opacity var(--theme-transition);
+  }
+
+  .theme-flower-spin {
+    animation: themeFlowerSpin 500ms ease;
+  }
+}
+
+@keyframes themeFlowerSpin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(120deg) scale(1.08);
+  }
+  100% {
+    transform: rotate(180deg) scale(1);
   }
 }

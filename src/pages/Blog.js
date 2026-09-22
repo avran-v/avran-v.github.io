@@ -1,31 +1,32 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Blog = ({ className }) => {
-  const [posts, setPosts] = useState([]);
+  const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
     fetch('/assets/blogposts/index.json')
       .then(response => response.json())
-      .then(data => setPosts(data))
-      .catch(error => console.error('Error fetching blog posts:', error));
+      .then(data => setBlogs(data))
+      .catch(error => console.error('Error fetching blogs:', error));
   }, []);
 
   return (
     <div className={className}>
-      <main className="w-full">
-        <div className="flex flex-col items-center mt-5 w-full">
-          <p className="text-center mb-4">Welcome to my blog!</p>
-          <div className="w-2/3">
-            {posts.map((post, index) => (
+      <main className="min-h-screen bg-sage">
+        <div className="max-w-6xl mx-auto px-6 py-12">
+          <h1 className="text-4xl font-bold text-gray-900 mb-12">Writing</h1>
+          
+          <div className="space-y-6">
+            {blogs.map((blog, index) => (
               <Link 
-                to={`/blog/${post.slug}`} 
+                to={`/blog/${blog.slug}`}
                 key={index}
-                className="block mb-6 p-4 border rounded-lg hover:shadow-lg transition-shadow"
+                className="block bg-sage rounded-lg p-6 transition-all"
               >
-                <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
-                <p className="text-gray-600">{post.date}</p>
-                <p className="mt-2">{post.description}</p>
+                <h2 className="text-xl font-semibold text-gray-900 hover:text-blue-600">{blog.title}</h2>
+                <p className="text-sm text-gray-600 mt-1">{blog.date}</p>
+                <p className="text-gray-700 mt-3">{blog.description}</p>
               </Link>
             ))}
           </div>
@@ -33,6 +34,6 @@ const Blog = ({ className }) => {
       </main>
     </div>
   );
-}
+};
 
 export default Blog;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 
 const BlogPost = ({ className }) => {
@@ -15,9 +15,12 @@ const BlogPost = ({ className }) => {
 
   return (
     <div className={className}>
-      <main className="w-full">
-        <div className="flex flex-col items-center mt-5 w-full">
-          <article className="prose prose-slate lg:prose-lg mx-auto px-4">
+      <main className="min-h-screen bg-sage">
+        <div className="max-w-4xl mx-auto px-6 py-12">
+          <Link to="/blog" className="text-blue-600 hover:text-blue-800 mb-8 inline-block">
+            ← Back to Writing
+          </Link>
+          <article className="prose prose-slate lg:prose-lg max-w-none bg-sage rounded-lg p-8">
             <ReactMarkdown>{post}</ReactMarkdown>
           </article>
         </div>

@@ -1,5 +1,13 @@
 [
   {
+    "title": "Perceptions of AI Welfare Demo",
+    "subtitle":"Sentient Futures Project Incubator", 
+    "content": "Interactive web demo to gauge perceptions of AI consciousness",
+    "website": "https://www.sentientfutures.ai/incubator/gallery/ai-welfare-demo/",
+    "demovid":"https://www.youtube.com/watch?v=YS0uQ-4hwvM",
+    "image":"/assets/aiwelfare.jpg"
+  },
+  {
     "title": "Exoplanet Habitability Prediction",
     "subtitle":"Machine Learning Final Project", 
     "content": "Trained 3 ML models and created an interactive demo to test if an exoplanet is habitable or not.",

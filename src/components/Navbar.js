@@ -1,26 +1,55 @@
 import React from "react"; 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
+    const location = useLocation();
+
+    const isActive = (path) => location.pathname === path;
+
     return (
-      <header className="bg-indigo-950 md:sticky top-0 z-10">
-        <div className="container mx-auto flex flex-wrap p-10 flex-col md:flex-row items-center justify-center">
-          <a className="text-3xl title-font font-medium text-white mb-4 md:mb-0">
-              Keerthi Veeramachaneni
-          </a>
-          <nav className="flex flex-wrap text-indigo-300 items-center justify-center">
-            <Link to="/" className="ml-4 mr-5 hover:text-white">
-                About
-            </Link>
-            <Link to="/projects" className="mr-5 hover:text-white">
-              Projects
-            </Link>
-            <Link to="/blog" className="mr-5 hover:text-white">
-              Blog
-            </Link>
-            <Link to="/now" className="mr-5 hover:text-white">
-              Now
-            </Link>
+      <header className="sticky top-0 z-50 bg-site h-16">
+        <div className="h-full flex items-center justify-end pr-12">
+          <nav className="flex gap-12 text-site-muted">
+            <div className="relative group">
+              <Link
+                to="/"
+                className="theme-smooth text-2xl font-bold transition-colors hover:opacity-90"
+                style={{ color: isActive("/") ? "var(--site-text)" : "var(--site-muted)" }}
+              >
+                about
+              </Link>
+              {isActive("/") && (
+                <span className="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap rounded text-xs font-semibold text-site-subtle opacity-0 transition-opacity group-hover:opacity-100">
+                  you're here :)
+                </span>
+              )}
+            </div>
+            <div className="relative group">
+              <Link
+                to="/projects"
+                className="theme-smooth text-2xl font-bold transition-colors hover:opacity-90"
+                style={{ color: isActive("/projects") ? "var(--site-text)" : "var(--site-muted)" }}
+              >
+                projects
+              </Link>
+              {isActive("/projects") && (
+                <span className="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap rounded text-xs font-semibold text-site-subtle opacity-0 transition-opacity group-hover:opacity-100">
+                  you're here :)
+                </span>
+              )}
+            </div>
+            <div className="relative group">
+              <span
+                className="theme-smooth text-2xl font-bold cursor-default select-none"
+                style={{ color: "color-mix(in srgb, var(--site-muted) 70%, transparent)" }}
+                aria-disabled="true"
+              >
+                writing
+              </span>
+              <span className="pointer-events-none absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap rounded text-xs font-semibold text-site-subtle opacity-0 transition-opacity group-hover:opacity-100">
+                coming soon!
+              </span>
+            </div>
           </nav>
         </div>
       </header>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Project({ title, content, github, image, devpost, website, demovid, subtitle }) {
   return (
-    <div className="w-full mx-auto my-4 border rounded overflow-hidden shadow-lg bg-white flex flex-col md:flex-row">
+    <div className="w-full mx-auto my-4 rounded overflow-hidden bg-sage flex flex-col md:flex-row">
       <div 
         className="w-full md:w-1/3 flex-none bg-cover text-center overflow-hidden" 
         style={{ backgroundImage: `url(${image})`, height: '13rem', backgroundSize: 'cover', backgroundPosition: 'center'}} 
@@ -39,8 +39,6 @@ export default function Project({ title, content, github, image, devpost, websit
     </div>
   );
 }
-
-
 
 
 
