@@ -5,7 +5,6 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
-import Now from "./pages/Now";
 import Navbar from "./components/Navbar";
 
 function AppRoutes({ onToggleTheme }) {

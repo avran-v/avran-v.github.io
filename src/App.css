@@ -22,8 +22,6 @@ html {
   border-width: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +29,6 @@ html {
 }
 
 html, body, #root {
-  font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--site-bg);
@@ -42,7 +39,6 @@ html, body, #root {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Manrope', sans-serif;
   font-weight: 700;
 }
 
